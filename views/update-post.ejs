@@ -1,0 +1,26 @@
+<main class="main-create-post">
+    <section class="create-post-section">
+        <form action=<%=linkObject.update %> method="post" class="create-post-form" enctype="multipart/form-data">
+            <label for="post-title">post title:</label>
+            <input type="text" id="post-title" name="postTitle" value=<%=post.postTitle%> >
+            <label for="post-status">post status:</label>
+            <select name="postStatus" id="post-status">
+                <option value=<%=post.postStatus %> selected> <%=post.postStatus %>
+                </option>
+                <option value=<%=post.postStatus==="public" ? "private" : "public" %> >
+                    <%= post.postStatus=="public" ? "private" : "public" %>
+                </option>
+            </select>
+            <label for="uploadImage">change the image</label>
+            <input type="file" name="uploadImage" id="uploadImage">
+            <div style="width:200px ; height:200px ">
+                <img src=<%=post.postImage %> style="width:100%; height:100%">
+            </div>
+            <input type="text" name="lastImage" value=<%=post.postImagePath %> style="opacity: 0;" >
+            <label for="post-text">post text</label>
+            <textarea name="postText" id="post-text" cols="30" rows="10"><%= post.postText %></textarea>
+            <button type="submit">update</button>
+        </form>
+    </section>
+
+</main>

@@ -1,0 +1,140 @@
+@media only screen and (max-width:480px) {
+
+    /* navbar */
+    .navbar {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgb(17, 39, 39);
+        padding: 10px;
+        z-index: 3;
+    }
+
+    .logo-nav {
+        margin-right: auto;
+
+    }
+
+    .blogs-nav,
+    .register-nav,
+    .login-nav {
+        display: none;
+    }
+
+    .menue-nav {
+        margin-right: 20px;
+    }
+
+    .hidden-nav {
+        margin-left: auto;
+        width: 40%;
+        text-align: center;
+        display: none;
+        transition: 100ms ease;
+        position: fixed;
+        top: 38px;
+        right: 0;
+        background-color: rgb(15, 15, 60);
+        z-index: 3;
+    }
+}
+
+/* tablet design */
+
+@media only screen and (min-width:481px) and (max-width:767px) {
+    .navbar {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgb(17, 39, 39);
+        padding: 10px;
+        z-index: 3;
+    }
+
+    .logo-nav {
+        margin-right: auto;
+
+    }
+
+    .blogs-nav,
+    .register-nav,
+    .login-nav {
+        display: none;
+    }
+
+    .menue-nav {
+        margin-right: 20px;
+
+    }
+
+    .hidden-nav {
+        margin-left: auto;
+        width: 40%;
+        text-align: center;
+        display: none;
+        transition: 100ms ease;
+        position: fixed;
+        top: 38px;
+        right: 0;
+        background-color: rgb(15, 15, 60);
+        z-index: 3;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgb(17, 39, 39);
+        padding: 20px;
+        z-index: 3;
+        font-size: 30px;
+    }
+
+    .logo-nav {
+        margin-right: auto;
+
+    }
+
+    .blogs-nav,
+    .register-nav,
+    .login-nav {
+        margin-right: 25px;
+    }
+
+    .menue-nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .navbar {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgb(17, 39, 39);
+        padding: 20px;
+        z-index: 3;
+        font-size: 30px;
+    }
+
+    .logo-nav {
+        margin-right: auto;
+
+    }
+
+    .blogs-nav,
+    .register-nav,
+    .login-nav {
+        margin-right: 25px;
+    }
+
+    .menue-nav {
+        display: none;
+    }
+}

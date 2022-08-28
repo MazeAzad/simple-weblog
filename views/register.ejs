@@ -1,0 +1,29 @@
+<main class="register-page">
+    <section class="register-form-section">
+        <div class="errors">
+            <% if(errors.length>0) {%>
+                <% errors.forEach((error)=>{ %>
+                    <div class="error">
+                        <p>
+                            <%= error %>
+                        </p>
+                        <i class="fa-solid fa-xmark close"></i>
+                    </div>
+                    <% }) %>
+                        <% } %>
+        </div>
+        <form action="/register" method="post" class="register-form">
+            <label for="firstName">first name</label>
+            <input type="text" id="firstName" name="firstName">
+            <label for="lastName">last name</label>
+            <input type="text" id="lastName" name="lastName">
+            <label for="user-email">email</label>
+            <input type="email" name="email" id="user-email">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password">
+            <label for="password-confirm">confirm password</label>
+            <input type="password" name="confirmPassword" id="password-confirm">
+            <button type="submit" class="register-form-submit">submit</button>
+        </form>
+    </section>
+</main>

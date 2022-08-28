@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/user-navbar.css">
+    <link rel="stylesheet" href="/css/user-style.css">
+    <link rel="stylesheet" href="/css/userShowPost.css">
+    <script src="//cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo-nav"><a href="/" class="logo-link-nav">blogA</a></div>
+        <div class="posts-nav"><a href=<%=linkObject.post %> class="posts-link-nav">posts</a></div>
+        <div class="create-nav"><a href=<%=linkObject.create%> class="create-link-nav">create</a></div>
+        <div class="logout-nav"><a href=<%=linkObject.logout %> class="logout-link-nav">logout</a></div>
+        <div class="menue-nav"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="hidden-nav">
+        <div class="posts-nav-hidden"><a href=<%=linkObject.post %> class="posts-link-nav-hidden">posts</a></div>
+        <div class="create-nav-hidden"><a href=<%=linkObject.create %>
+                class="create-link-nav-hidden">create</a></div>
+        <div class="logout-nav-hidden"><a href=<%=linkObject.logout %> class="logout-link-nav-hidden">logout</a></div>
+    </div>
+
+    <%- body %>
+
+        <script>
+            CKEDITOR.replace("post-text", {
+
+            });
+        </script>
+        <script src="/js/navbar.js"></script>
+</body>
+
+</html>

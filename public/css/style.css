@@ -1,0 +1,304 @@
+ body {
+     margin: 0;
+     padding: 0;
+ }
+
+ /* links */
+ a {
+     text-decoration: none;
+     color: whitesmoke;
+
+ }
+
+ a:visited {
+     color: whitesmoke;
+ }
+
+ a:active {
+     color: whitesmoke;
+ }
+
+ .menue-nav {
+     color: whitesmoke;
+ }
+
+
+
+
+ /* mobile version */
+
+ @media only screen and (max-width:480px) {
+
+     main {
+         position: relative;
+         top: 23px;
+
+     }
+
+     .banner-text {
+         text-align: center;
+         font-size: large;
+     }
+
+     .banner-image {
+         width: 200px;
+         height: 200px;
+         margin: 0 auto 0 auto;
+     }
+
+     .banner-image img {
+         width: 100%;
+         height: 100%;
+     }
+
+     .selected-posts {
+         width: 100%;
+     }
+
+     .srecentPost {
+         width: 100%;
+     }
+
+     .posts {
+         width: 200px;
+         height: 400px;
+         margin: 20px auto 0 auto;
+     }
+
+     .post-image {
+         width: 200px;
+         height: 200px;
+     }
+
+     .post-image img {
+         width: 100%;
+         height: 100%;
+     }
+
+     .post-text {
+         width: 200px;
+         height: 200px;
+
+     }
+
+     footer {
+         margin-top: 50px;
+         text-align: center;
+         width: 100%;
+     }
+
+
+
+ }
+
+ /* tablet design */
+
+ @media only screen and (min-width:481px) and (max-width:767px) {
+
+
+     main {
+         position: relative;
+         top: 23px;
+     }
+
+     .banner-text {
+         text-align: center;
+         font-size: large;
+     }
+
+     .banner-image {
+         width: 400px;
+         height: 400px;
+
+         margin: 0 auto 0 auto;
+     }
+
+     .banner-image img {
+         width: 100%;
+         height: 100%;
+     }
+
+     .selected-posts {
+         width: 100%;
+     }
+
+     .posts {
+         width: 400px;
+         height: 400px;
+         margin: 20px auto 0 auto;
+     }
+
+     .post-image {
+         width: 400px;
+         height: 200px;
+
+     }
+
+     .post-image img {
+         width: 100%;
+         height: 100%;
+     }
+
+     .post-text {
+         width: 400px;
+         height: 200px;
+
+     }
+
+
+
+
+
+
+ }
+
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+     main {
+         position: relative;
+
+     }
+
+     .banner-text {
+         text-align: center;
+         font-size: large;
+     }
+
+     .banner-image {
+         width: 400px;
+         height: 400px;
+
+         margin: 0 auto 0 auto;
+     }
+
+     .banner-image img {
+         width: 100%;
+         height: 100%;
+     }
+
+     .selected-posts {
+         width: 100%;
+     }
+
+
+     .posts {
+         width: 400px;
+         height: 400px;
+         margin: 20px auto 0 auto;
+     }
+
+     .post-image {
+         width: 400px;
+         height: 200px;
+
+     }
+
+     .post-image img {
+         width: 100%;
+         height: 100%;
+     }
+
+     .post-text {
+         width: 400px;
+         height: 200px;
+
+     }
+
+
+
+ }
+
+ @media only screen and (min-width: 1025px) {
+
+     main {
+         position: relative;
+         width: 100%;
+
+         top: 20px;
+     }
+
+     .banner {
+         display: flex;
+         width: 100%;
+         margin-bottom: 20px;
+         justify-content: center;
+     }
+
+     .banner-text {
+         text-align: center;
+         font-size: large;
+         width: 512px;
+         font-size: 30px;
+
+
+     }
+
+     .banner-text p {
+         margin: auto;
+         transform: translate(0, 100%);
+
+     }
+
+     .banner-image {
+         width: 512px;
+         height: 400px;
+
+
+     }
+
+     .banner-image img {
+         width: 100%;
+         height: 100%;
+     }
+
+     .selected-posts {
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         flex-direction: row;
+
+     }
+
+     .recentPost {
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         flex-direction: row;
+
+     }
+
+     .posts {
+         width: 400px;
+         height: 400px;
+         margin-right: 20px;
+         margin-bottom: 20px;
+
+     }
+
+     .post-image {
+         width: 400px;
+         height: 200px;
+
+     }
+
+     .post-image img {
+         width: 100%;
+         height: 100%;
+     }
+
+     .post-text {
+         width: 400px;
+         height: 200px;
+
+     }
+
+ }
+
+ .menueEffect {
+     display: block;
+
+ }

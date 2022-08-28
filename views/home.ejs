@@ -1,0 +1,34 @@
+<main>
+    <section class="banner">
+        <div class="banner-text">
+            <p>write for everyone</p>
+        </div>
+        <div class="banner-image">
+            <img src="/img/pen.jpg" alt="">
+        </div>
+    </section>
+    <section class="selected-posts">
+        <% if(selectedPosts.length>0){%>
+            <% selectedPosts.forEach((post)=>{ %>
+                <% if(post!==undefined){ %>
+                    <a href=<%=`/post/${post.id}` %> style="color:black;" >
+                        <div class="posts">
+                            <div class="post-image">
+                                <img src=<%=post.postImage %> alt="">
+                            </div>
+                            <div class="post-text">
+                                <p class="post-title">
+                                    <%=post.postTitle%>
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+                    <% } %>
+                        <%})%>
+                            <% } %>
+                                <% if(selectedPosts.length===0){ %>
+                                    <p>no posts yet</p>
+                                    <% } %>
+    </section>
+</main>

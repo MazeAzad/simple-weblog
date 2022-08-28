@@ -1,0 +1,517 @@
+body {
+    margin: 0;
+    padding: 0;
+
+
+
+}
+
+/* links */
+a {
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+a:visited {
+    color: whitesmoke;
+}
+
+a:active {
+    color: whitesmoke;
+}
+
+.menue-nav {
+    color: whitesmoke;
+}
+
+/* mobile version */
+
+@media only screen and (max-width:480px) {
+
+    /* user home page */
+    .main-user-home-page {
+        position: relative;
+        top: 23px;
+
+        width: 100%;
+
+    }
+
+    .welcome {
+        text-align: center;
+    }
+
+
+    .recent-posts {
+        width: 100%;
+    }
+
+
+    .posts {
+        width: 200px;
+        height: 400px;
+        margin: 20px auto 0 auto;
+        position: relative;
+    }
+
+    .post-image {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .post-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .post-text {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    /* create post */
+    .main-create-post {
+        position: relative;
+        top: 50px;
+        max-width: 1200px;
+        height: 100%;
+        justify-content: center;
+        margin-bottom: 200px;
+    }
+
+    .create-post-section {
+        margin: 0 auto;
+        width: 300px;
+
+
+    }
+
+    .create-post-form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    label[for="post-title"] {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+
+    #post-title {
+        width: 200px;
+        padding: 5px;
+
+    }
+
+    label[for="post-status"] {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+
+    #post-status {
+        width: 100px;
+        padding: 5px;
+
+
+    }
+
+    label[for="post-text"] {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+
+    button[type="submit"] {
+        width: 60px;
+        margin-top: 30px;
+
+    }
+
+
+    #trash {
+
+        color: black;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+
+}
+
+/* tablet design */
+
+@media only screen and (min-width:481px) and (max-width:767px) {
+
+
+    .main-user-home-page {
+        position: relative;
+        top: 23px;
+
+    }
+
+    .welcome {
+        text-align: center;
+    }
+
+
+
+    .recent-posts {
+        width: 100%;
+    }
+
+    .posts {
+        width: 400px;
+        height: 400px;
+        margin: 20px auto 0 auto;
+        position: relative;
+    }
+
+    .post-image {
+        width: 400px;
+        height: 200px;
+
+    }
+
+    .post-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .post-text {
+        width: 400px;
+        height: 200px;
+
+    }
+
+    /* create post */
+    .main-create-post {
+        position: relative;
+        top: 50px;
+        width: 100%;
+        height: 600px;
+        justify-content: center;
+
+
+    }
+
+    .create-post-section {
+        margin: 0 auto;
+        width: 500px;
+
+    }
+
+    .create-post-form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    label[for="post-title"] {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+
+    #post-title {
+        width: 200px;
+        padding: 5px;
+
+    }
+
+    label[for="post-status"] {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+
+    #post-status {
+        width: 100px;
+        padding: 5px;
+
+
+    }
+
+    label[for="post-text"] {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+
+    button[type="submit"] {
+        width: 60px;
+        margin-top: 30px;
+
+    }
+
+    #trash {
+
+        color: black;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    #pen {
+        color: black;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .recent-posts {
+        width: 100%;
+    }
+
+    .main-user-home-page {
+        position: relative;
+    }
+
+    .welcome {
+        text-align: center;
+    }
+
+    .posts {
+        width: 400px;
+        height: 400px;
+        margin: 20px auto 0 auto;
+    }
+
+    .post-image {
+        width: 400px;
+        height: 200px;
+
+    }
+
+    .post-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .post-text {
+        width: 400px;
+        height: 200px;
+
+    }
+
+    /* create post */
+    .main-create-post {
+        position: relative;
+        top: 50px;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 200px;
+
+    }
+
+    .create-post-section {
+        margin: 0 auto;
+        width: 600px;
+        margin-bottom: 100px;
+
+    }
+
+    .create-post-form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    label[for="post-title"] {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+
+    #post-title {
+        width: 200px;
+        padding: 5px;
+
+    }
+
+    label[for="post-status"] {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+
+    #post-status {
+        width: 100px;
+        padding: 5px;
+
+
+    }
+
+    label[for="post-text"] {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+
+    button[type="submit"] {
+        width: 60px;
+        margin-top: 30px;
+
+    }
+
+    #trash {
+
+        color: black;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    #pen {
+        color: black;
+    }
+
+
+}
+
+@media only screen and (min-width: 1025px) {
+    .main-user-home-page {
+        position: relative;
+        width: 100%;
+
+        top: 20px;
+    }
+
+    .recent-posts {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+
+
+    }
+
+    .welcome {
+        text-align: center;
+    }
+
+
+    .posts {
+        width: 400px;
+        height: 400px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .post-image {
+        width: 400px;
+        height: 200px;
+
+    }
+
+    .post-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .post-text {
+        width: 400px;
+        height: 200px;
+
+    }
+
+    /* create post */
+    .main-create-post {
+        position: relative;
+        top: 50px;
+        width: 100%;
+        height: 98vh;
+        justify-content: center;
+
+    }
+
+    .create-post-section {
+        margin: 0 auto;
+        width: 800px;
+        margin-bottom: 200px;
+
+    }
+
+    .create-post-form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    label[for="post-title"] {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+
+    #post-title {
+        width: 200px;
+        padding: 5px;
+
+    }
+
+    label[for="post-status"] {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+
+    #post-status {
+        width: 100px;
+        padding: 5px;
+
+
+    }
+
+    label[for="post-text"] {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+
+    label[for="uploadImage"] {
+        display: block;
+        margin: 5px 0 5px 0;
+    }
+
+    input[type="file"]::file-selector-button {
+        padding: 5px;
+        border: 0;
+    }
+
+    input[type="file"]::file-selector-button:hover {
+        background-color: rgb(102, 174, 237);
+        border: 1px solid black;
+        border-radius: 2px;
+        box-shadow: 2px;
+    }
+
+    button[type="submit"] {
+        width: 60px;
+        margin-top: 30px;
+
+    }
+
+    #trash {
+
+        color: black;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    #pen {
+        color: black;
+    }
+
+
+
+
+}

@@ -1,0 +1,19 @@
+<main class="main-create-post">
+    <section class="create-post-section">
+        <form action=<%=linkObject.create %> method="post" class="create-post-form" enctype="multipart/form-data">
+            <label for="post-title">post title:</label>
+            <input type="text" id="post-title" name="postTitle">
+            <label for="post-status">post status:</label>
+            <select name="postStatus" id="post-status">
+                <option value="private">private</option>
+                <option value="public">public</option>
+            </select>
+            <label for="uploadImage">upload image</label>
+            <input type="file" name="uploadImage" id="uploadImage">
+            <label for="post-text">post text</label>
+            <textarea name="postText" id="post-text" cols="30" rows="10"></textarea>
+            <button type="submit">submit</button>
+        </form>
+    </section>
+
+</main>

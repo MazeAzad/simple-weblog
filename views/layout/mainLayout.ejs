@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/userShowPost.css">
+    <title>blog-A</title>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo-nav"><a href="/" class="logo-link-nav">blogA</a></div>
+        <div class="blogs-nav"><a href="/blogs" class="blogs-link-nav">blogs</a></div>
+        <div class="register-nav"><a href="/register" class="register-link-nav">register</a></div>
+        <div class="login-nav"><a href="/login" class="login-link-nav">login</a></div>
+        <div class="menue-nav"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="hidden-nav">
+        <div class="blogs-nav-hidden"><a href="/blogs" class="blogs-link-nav-hidden">blogs</a></div>
+        <div class="register-nav-hidden"><a href="/register" class="register-link-nav-hidden">register</a></div>
+        <div class="login-nav-hidden"><a href="/login" class="login-link-nav-hidden">login</a></div>
+    </div>
+
+    <%- body %>
+        <script src="/js/navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<main class="register-page">
+    <section class="register-form-section">
+        <div class="messages">
+            <% if(message.length>0) {%>
+                <div class="message">
+                    <%= message %>
+                        <i class="fa-solid fa-xmark close"></i>
+                </div>
+                <% } %>
+        </div>
+        <div class="errors">
+            <% if(error.length>0){ %>
+                <div class="error">
+                    <%= error %>
+                        <i class="fa-solid fa-xmark close"></i>
+                </div>
+                <% } %>
+        </div>
+
+        <form action="/login" method="post" class="register-form">
+            <label for="user-email">email</label>
+            <input type="email" name="email" id="user-email">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password">
+            <button type="submit" class="register-form-submit">submit</button>
+        </form>
+    </section>
+</main>

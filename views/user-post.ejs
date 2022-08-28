@@ -1,0 +1,26 @@
+<main class="main-user-home-page">
+    <section class="recent-posts">
+
+        <% if(posts.length>0) {%>
+            <% posts.forEach((post)=>{ %>
+                <a href=<%=`/user/${username}/post/${post.id}` %> style="color:black;">
+                    <div class="posts">
+                        <div class="post-image">
+                            <img src="<%=post.postImage %> " alt="">
+                        </div>
+                        <div class="post-text">
+                            <%= post.postTitle %>
+                                <a href=<%=`http://localhost:3000/delete/${post.id}` %> id="trash" ><i
+                                        class="fa-solid fa-trash-can"></i></a>
+                                <a href=<%=`http://localhost:3000/update/${post.id}` %> id="pen" >
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                        </div>
+                    </div>
+                </a>
+                <% }) %>
+                    <% } else{%>
+                        <p> no post yet</p>
+                        <% } %>
+    </section>
+</main>

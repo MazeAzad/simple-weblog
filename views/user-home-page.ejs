@@ -1,0 +1,31 @@
+<main class="main-user-home-page">
+    <section class="welcome">
+        <p class="welcome">
+            hello <%=fullname%>
+        </p>
+        <% if(posts.length==0) { %>
+            <p> not post yet</p>
+            <% } %>
+                <% if(posts.length>0){ %>
+                    <p>recent posts</p>
+                    <% } %>
+    </section>
+    <section class="recent-posts">
+
+        <% if(posts.length>0) {%>
+            <% posts.forEach((post)=>{ %>
+                <a href=<%=`/user/${username}/post/${post.id}` %> style="color:black;">
+                    <div class="posts">
+                        <div class="post-image">
+                            <img src="<%=post.postImage %> " alt="">
+                        </div>
+                        <div class="post-text">
+                            <%= post.postTitle %>
+                        </div>
+                    </div>
+                </a>
+                <% }) %>
+                    <% } %>
+
+    </section>
+</main>

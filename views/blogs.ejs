@@ -1,0 +1,23 @@
+<main class="main-user-home-page">
+    <section class="selected-posts">
+        <% if(posts.length>=0){%>
+            <% posts.forEach((post)=>{ %>
+                <% if(post!==undefined){ %>
+                    <a href=<%=`/post/${post.id}` %> style="color:black;">
+                        <div class="posts">
+                            <div class="post-image">
+                                <img src=<%=post.postImage %> alt="">
+                            </div>
+                            <div class="post-text">
+                                <p class="post-title">
+                                    <%=post.postTitle%>
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+                    <% } %>
+                        <%})%>
+                            <% } %>
+    </section>
+</main>
