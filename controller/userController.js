@@ -1,5 +1,4 @@
 
-
 // home page 
 const posts=require("../model/posts");
 const mongoose=require("mongoose");
@@ -105,8 +104,3 @@ exports.showPosts=async(req,res)=>{
     console.log(err);
   }
 }
-
-
-
- 
-

@@ -1,41 +1,46 @@
+// PUT ALL IMPORTS TO TOP OF FILE
 const express = require("express");
+const MongoStore=require("connect-mongo");
+const mongoose=require("mongoose");
+const dotEnv = require("dotenv");
 const app = express();
 const path = require("path");
-
+const ejsExpressLayout = require("express-ejs-layouts");
+const session=require("express-session");
+const flash = require("connect-flash");
+const passport=require("passport");
+const upload=require("express-fileupload");
+require("./config/passport");
 // env file
-const dotEnv = require("dotenv");
 dotEnv.config({ path: "./config/config.env" });
+// import routing
+const homePage = require("./router/homeRoute");
+const registerPage = require("./router/registerRouter");
+const loginPage = require("./router/loginRouter");
+const adminRoute=require("./router/admin");
+const postsRoute=require("./router/posts");
 
 // connection to data base
 const mongoConnect = require("./config/database");
 mongoConnect();
 
 // body parser
- 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // express fileupload
-const upload=require("express-fileupload");
 app.use(upload());
 //veiw Engine
 app.set("view engine", "ejs");
 
 // ejs express layout
-const ejsExpressLayout = require("express-ejs-layouts");
 app.use(ejsExpressLayout);
 app.set("layout", "./layout/mainLayout");
 
 // express statict
 app.use(express.static(path.join(__dirname, "public")));
 
-
-// storing session 
-const MongoStore=require("connect-mongo");
- const mongoose=require("mongoose");
-
 //session 
-const session=require("express-session");
 app.use(session({
   secret:"secret",
   cookie:{maxAge:4320000000},
@@ -45,12 +50,9 @@ app.use(session({
   store:  MongoStore.create( { mongoUrl:process.env.MONGO_URI,dbName:"blog_db2",autoRemove:"disabled",collectionName:"session" } )
 }))
 // flash
-const flash = require("connect-flash");
 app.use(flash());
 
 // passport js 
-const passport=require("passport");
- require("./config/passport");
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -60,28 +62,11 @@ app.use(function(req,res,next){
   next();
 })
 
- 
-
 // routers
-
-
-// home route
-const homePage = require("./router/homeRoute");
 app.use(homePage);
-// register route
-const registerPage = require("./router/registerRouter");
 app.use(registerPage);
-
-// login route
-const loginPage = require("./router/loginRouter");
-
 app.use(loginPage);
-
-// user route
-const adminRoute=require("./router/admin");
 app.use(adminRoute);
-
-const postsRoute=require("./router/posts");
 app.use(postsRoute);
 // sever run
 

@@ -29,7 +29,6 @@ const postSchema= new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref:"Users"
     }
-     
 })
 
 const postModel=mongoose.model("Posts",postSchema);
